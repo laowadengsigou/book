@@ -1,0 +1,18 @@
+<view class="flex">
+  <view bindtap="flag">
+    <van-icon name="edit" size="80rpx" />
+  </view>
+  <view class="but">
+    <van-button type="default">帮助</van-button>
+    <van-icon name="replay" size="60rpx" class="but1" />
+  </view>
+</view>
+<van-row>
+  <van-col span="8" wx:for="{{bookShelf}}" wx:key="{{index}}">
+  <view class="re" bindtap="reading" data-item="{{item}}">
+  <view><image src="https://statics.zhuishushenqi.com{{item.cover}}" class="img"></image></view>
+  <view>{{item.title}}</view>
+  <view class="dele" wx:if="{{flag === true}}" catchtap="dele" data-index="{{index}}">X</view>
+  </view>
+  </van-col>
+</van-row>

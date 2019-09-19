@@ -1,0 +1,24 @@
+<van-tabs active="{{ active }}" bind:click="click" data-index="{{index}}">
+  <view wx:for="{{list}}" wx:key="{{index}}">
+    <van-tab title="{{item.name}}">
+      <van-tabs active="{{ actives }}" bind:click="click1" data-index="{{index}}">
+        <view wx:for="{{mins}}" wx:key="{{index}}">
+          <van-tab title="{{item}}">
+            <view wx:for="{{books}}" wx:key="{{index}}" bindtap="clicks" data-item="{{item}}">
+              <view class="flex">
+                <view>
+                  <image src="https://statics.zhuishushenqi.com{{item.cover}}" class="img"></image>
+                </view>
+                <view>
+                <view>{{item.title}}</view>
+                <view>{{item.author}}</view>
+                <view class="shortIntro">{{item.shortIntro}}</view>
+                </view>
+              </view>
+            </view>
+          </van-tab>
+        </view>
+      </van-tabs>
+    </van-tab>
+  </view>
+</van-tabs>

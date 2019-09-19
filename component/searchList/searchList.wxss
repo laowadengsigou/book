@@ -1,0 +1,31 @@
+.img{
+  width: 240rpx;
+  height: 350rpx
+}
+.fl{
+  display: flex
+}
+.shortIntro{
+  text-overflow: ellipsis;
+  overflow: hidden;
+  display: -webkit-box;
+  -webkit-line-clamp: 3;
+  -webkit-box-orient: vertical;
+  margin-top: 20rpx;
+  color:Gray
+}
+.author{
+  color:Gray
+}
+.title{
+  font-weight: 700
+}
+.latelyFollower{
+  margin-top: 20rpx;
+  color: #FF8800 
+}
+.top{
+  margin-top: 50rpx;
+  border-bottom: 1rpx solid black;
+  height: 400rpx
+}

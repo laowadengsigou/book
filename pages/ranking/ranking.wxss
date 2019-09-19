@@ -1,0 +1,26 @@
+.img{
+  width: 200rpx;
+  height: 300rpx
+}
+.flex{
+  display: flex;
+  margin-top: 50rpx;
+  border-bottom: 1rpx solid gray;
+  height: 350rpx
+}
+.author{
+  color:Gray;
+  margin-top: 20rpx
+}
+.shortIntro{
+  text-overflow: ellipsis;
+  overflow: hidden;
+  display: -webkit-box;
+  -webkit-line-clamp: 3;
+  -webkit-box-orient: vertical;
+  margin-top: 20rpx;
+  color:Gray
+}
+.title{
+  font-weight:700
+}

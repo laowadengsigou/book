@@ -1,0 +1,41 @@
+{
+  "pages": [
+    "pages/index/index",
+    "pages/logs/logs",
+    "pages/search/search",
+    "pages/details/details",
+    "pages/ranking/ranking",
+    "pages/xiang/xiang",
+    "pages/read/read"
+  ],
+  "window": {
+    "backgroundTextStyle": "light",
+    "navigationBarBackgroundColor": "#fff",
+    "navigationBarTitleText": "WeChat",
+    "navigationBarTextStyle": "black"
+  },
+  "tabBar": {
+    "selectedColor": "f43",
+    "list": [
+      {
+        "pagePath": "pages/index/index",
+        "text": "书架",
+        "iconPath": "img/book.png",
+        "selectedIconPath": "img/book.png"
+      },
+      {
+        "pagePath": "pages/logs/logs",
+        "text": "书城",
+        "iconPath": "img/home.png",
+        "selectedIconPath": "img/home.png"
+      },
+      {
+        "pagePath": "pages/search/search",
+        "text": "搜索",
+        "iconPath": "img/sou.png",
+        "selectedIconPath": "img/sou.png"
+      }
+    ]
+  },
+  "sitemapLocation": "sitemap.json"
+}

@@ -1,0 +1,10 @@
+{
+  "navigationBarTitleText": "书城",
+  "navigationBarBackgroundColor":"f66",
+  "usingComponents": {
+    "van-tab": "../../lib/vant/tab/index",
+    "van-tabs": "../../lib/vant/tabs/index",
+    "van-row": "../../lib/vant/row/index",
+    "van-col": "../../lib/vant/col/index"
+  }
+}

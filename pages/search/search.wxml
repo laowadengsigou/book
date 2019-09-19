@@ -1,0 +1,28 @@
+<view>
+  <van-search value="{{ value }}" placeholder="请输入搜索关键词" use-action-slot bind:cancel="onCancel" bind:focus="ju" bind:blur="si" bind:change="change">
+    <view slot="action" bind:tap="onSearch" wx:if="{{flag === false}}">搜索</view>
+    <view slot="action" bind:tap="onCancel" wx:else>取消</view>
+  </van-search>
+</view>
+<navSearch wx:if="{{flag === true}}" books="{{books}}"></navSearch>
+<view wx:else>
+  <view class="fl">
+    <view>大家都在搜</view>
+    <view class="left" bindtap="click">
+      <van-icon name="replay" />
+      <text>换一换</text>
+    </view>
+  </view>
+  <view class="color">
+    <block wx:for="{{colors}}" wx:key="{{index}}" data-index="{{index}}">
+      <view style="background-color: {{item.color}}" class="vi">{{itemObj[index]}}</view>
+    </block>
+  </view>
+</view>
+<view class="go">
+  <view>搜索历史</view>
+  <view class="left">
+    <van-icon name="close" />
+    <text>清空</text>
+  </view>
+</view>

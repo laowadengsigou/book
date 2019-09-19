@@ -1,0 +1,30 @@
+.flex{
+  display: flex;
+  margin-top: 40rpx;
+  border-bottom: 1rpx solid gray;
+  height: 150rpx
+}
+.but{
+  margin-left: 400rpx
+}
+.but1{
+  margin-left: 30rpx
+}
+.img{
+  width: 240rpx;
+  height: 350rpx
+}
+.dele{
+  width: 50rpx;
+  height: 50rpx;
+  background-color: red;
+  border-radius: 50%;
+  text-align: center;
+  color: wheat;
+  position: absolute;
+  top: 10rpx;
+  right: 10rpx
+}
+.re{
+  position: relative
+}

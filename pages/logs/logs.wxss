@@ -1,0 +1,33 @@
+.boy{
+  color:Gray
+}
+.girl{
+  color:Gray;
+  margin-top: 50rpx
+}
+.publish{
+  color:Gray;
+  margin-top: 50rpx
+}
+.top{
+  margin-top: 20rpx;
+  margin-left: 100rpx
+}
+.top1{
+  margin-top: 50rpx
+}
+.name{
+  font-weight: bold
+}
+.bookCount{
+  color:Gray
+}
+.img{
+  width: 60rpx;
+  height: 60rpx;
+  margin-left: 20rpx
+}
+.top2{
+  margin-top: 40rpx
+}
+

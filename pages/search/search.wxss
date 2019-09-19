@@ -1,0 +1,21 @@
+.fl{
+  display: flex;
+  margin-top: 20rpx
+}
+.left{
+  margin-left: 370rpx;
+  color: #FF8800 
+}
+.color{
+  display: flex;
+  flex-wrap: wrap
+}
+.vi{
+  margin-left: 10rpx;
+  margin-top: 15rpx;
+  padding: 10rpx;
+  color: white
+}
+.go{
+  display: flex
+}

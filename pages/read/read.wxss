@@ -1,0 +1,16 @@
+.title{
+  font-weight: 700;
+  font-size: 60rpx;
+  height: 80rpx;
+  border-bottom: 1rpx solid Gray
+}
+.body{
+  font-size: 40rpx;
+  color: Gray;
+  text-indent:70rpx;
+  margin-top: 40rpx;
+}
+.but{
+  margin-top: 100rpx;
+  text-align: center
+}

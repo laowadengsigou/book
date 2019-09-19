@@ -1,0 +1,78 @@
+<!--logs.wxml-->
+<view>
+  <van-tabs active="{{ active }}">
+    <van-tab title="分类">
+      <view>
+        <view class="boy">男生</view>
+        <view class="top">
+          <van-row>
+            <van-col span="8" wx:for="{{list.male}}" wx:key="index">
+              <view class="top1">
+                <view class="name" bindtap="details" data-item="{{item}}" data-type="male">{{item.name}}</view>
+                <view class="bookCount">{{item.bookCount}}</view>
+              </view>
+            </van-col>
+          </van-row>
+        </view>
+      </view>
+      <view>
+        <view class="girl">女生</view>
+        <view class="top">
+          <van-row>
+            <van-col span="8" wx:for="{{list.female}}" wx:key="index">
+              <view class="top1">
+                <view class="name" bindtap="details" data-item="{{item}}" data-type='female'>{{item.name}}</view>
+                <view class="bookCount">{{item.bookCount}}</view>
+              </view>
+            </van-col>
+          </van-row>
+        </view>
+      </view>
+      <view>
+        <view class="publish">出版</view>
+        <view class="top">
+          <van-row>
+            <van-col span="8" wx:for="{{list.press}}" wx:key="index">
+              <view class="top1">
+                <view class="name" bindtap="details" data-item="{{item}}" data-type="press">{{item.name}}</view>
+                <view class="bookCount">{{item.bookCount}}</view>
+              </view>
+            </van-col>
+          </van-row>
+        </view>
+      </view>
+    </van-tab>
+    <van-tab title="排行">
+      <view>
+        <view class="boy">男生</view>
+        <view wx:for="{{ranking.male}}" wx:key="index">
+          <view wx:if="{{item.collapse === false}}">
+            <view class="top2">
+              <van-row>
+                <van-col span="4">
+                  <image src="https://statics.zhuishushenqi.com{{item.cover}}" class="img"></image>
+                </van-col>
+                <van-col span="20" bindtap = "pai" data-item="{{item}}">{{item.title}}</van-col>
+              </van-row>
+            </view>
+          </view>
+        </view>
+      </view>
+      <view>
+        <view class="girl">女生</view>
+        <view wx:for="{{ranking.female}}" wx:key="{{index}}">
+          <view wx:if="{{item.collapse === false}}">
+            <view class="top2">
+              <van-row>
+                <van-col span="4">
+                  <image src="https://statics.zhuishushenqi.com{{item.cover}}" class="img"></image>
+                </van-col>
+                <van-col span="20" bindtap = "pai" data-item="{{item}}">{{item.title}}</van-col>
+              </van-row>
+            </view>
+          </view>
+        </view>
+      </view>
+    </van-tab>
+  </van-tabs>
+</view>

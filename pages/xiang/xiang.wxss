@@ -1,0 +1,72 @@
+.image{
+  height: 150rpx;
+  background-color: #FF0000;
+  text-align: center
+}
+.img {
+  width: 300rpx;
+  height: 400rpx;
+  box-shadow: 10rpx 10rpx 8rpx 10rpx rgba(0, 0, 0, 0.1)
+}
+.text{
+  margin-top: 400rpx
+}
+.but{
+  margin-left: 100rpx
+}
+.but1{
+  margin-left: 150rpx
+}
+.pin{
+  margin-top: 20rpx;
+  text-align: center
+}
+.lastChapter{
+  color: #00FFFF
+}
+.lastChapter1{
+  text-align: center
+}
+.act{
+  margin-top: 30rpx
+}
+.longIntro{
+  color:Gray
+}
+.avatar{
+  width: 150rpx;
+  height: 150rpx;
+  border-radius: 50%
+}
+.items{
+  display: flex;
+  margin-top: 20rpx
+}
+.nickname{
+  color: #FF7F00
+}
+.points{
+  text-align: center;
+  margin-top: 30rpx;
+  background-color: Gray;
+  color: black;
+  height: 50rpx
+}
+.replay{
+  margin-top: 60rpx;
+  display: flex
+}
+.huan{
+  color: #FF7F00;
+  margin-left: 200rpx
+}
+.wor{
+ overflow: hidden
+}
+.ima{
+  width: 220rpx;
+   height: 300rpx;
+}
+
+
+

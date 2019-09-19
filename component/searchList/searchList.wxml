@@ -1,0 +1,13 @@
+<view wx:for="{{books}}" wx:key="{{index}}" class="top" bindtap="click" data-item="{{item}}">
+  <view class="fl">
+    <view>
+      <image src="https://statics.zhuishushenqi.com{{item.cover}}" class="img"></image>
+    </view>
+    <view>
+      <view class="title">{{item.title}}</view>
+      <view class="author">{{item.author}}</view>
+      <view class="shortIntro">{{item.shortIntro}}</view>
+      <view class="latelyFollower">最近收藏:{{item.latelyFollower}}</view>
+    </view>
+  </view>
+</view>

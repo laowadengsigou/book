@@ -1,0 +1,6 @@
+<view class="title">{{chapters.title}}</view>
+<view class='body'>{{chapter.body}}</view>
+<view class="but">
+<van-button round type="danger" bindtap="up">上一章</van-button>
+<van-button round type="danger" bindtap="down">下一章</van-button>
+</view>

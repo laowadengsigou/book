@@ -1,0 +1,59 @@
+<view class="image">
+  <view>
+    <image src="https://statics.zhuishushenqi.com{{list.cover}}" class="img"></image>
+    <view>{{list.title}}</view>
+    <view>{{list.author}}</view>
+  </view>
+</view>
+<view class="text">
+  <van-button round type="danger" class="but" bindtap="read" data-item="{{list}}">开始阅读</van-button>
+  <van-button round type="default" class="but1" bindtap="goto" data-item="{{list}}">加入书架</van-button>
+</view>
+<view>
+  <view class="pin">
+    <van-rate value="{{ list.rating.score/2 }}" />
+  </view>
+  <view class="lastChapter1">
+    更新至
+    <text class="lastChapter">{{list.lastChapter}}</text>
+  </view>
+</view>
+<view class="act">
+  <van-tabs active="{{ active }}">
+    <van-tab title="详情" class="longIntro">
+      <view>
+        简介:{{list.longIntro}}
+      </view>
+      <view class="points">
+        <van-icon name="points" />
+        <text>总目录({{list.chaptersCount}}章)</text>
+      </view>
+      <view class="replay">
+        <view>看过这本书的人还在看</view>
+        <view class="huan" bindtap="click">
+          <van-icon name="replay" />换一换</view>
+      </view>
+      <van-row>
+          <view class="wor">
+            <van-col span="8" wx:for="{{item}}" wx:key="{{index}}">
+              <image class="ima" src="https://statics.zhuishushenqi.com{{item.cover}}"></image>
+              <view>{{item.title}}</view>
+            </van-col>
+          </view>
+        </van-row>
+    </van-tab>
+    <van-tab title="评价">
+      <view wx:for="{{docs}}" wx:key="{{index}}">
+        <view class="items">
+          <view>
+            <image src="https://statics.zhuishushenqi.com{{item.author.avatar}}" class="avatar"></image>
+          </view>
+          <view>
+            <view class="nickname">{{item.author.nickname}}</view>
+            <view>{{item.content}}</view>
+          </view>
+        </view>
+      </view>
+    </van-tab>
+  </van-tabs>
+</view>

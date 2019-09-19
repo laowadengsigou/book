@@ -1,0 +1,10 @@
+{
+  "usingComponents": {
+    "van-icon": "../../lib/vant/icon/index",
+    "van-button": "../../lib/vant/button/index",
+    "van-row": "../../lib/vant/row/index",
+    "van-col": "../../lib/vant/col/index"
+  },
+  "navigationBarTitleText": "书架",
+  "navigationBarBackgroundColor": "f66"
+}
